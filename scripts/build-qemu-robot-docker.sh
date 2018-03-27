@@ -68,7 +68,6 @@ RUN pip install \
     robotframework-sshlibrary \
     robotframework-scplibrary \
     robotframework-xvfb \
-    #xvfbwrapper==0.2.8 \
     robotframework-selenium2library \
     robotframework-seleniumlibrary \
     robotframework-extendedselenium2library \
