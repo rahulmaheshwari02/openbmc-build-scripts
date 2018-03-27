@@ -67,8 +67,8 @@ RUN pip install \
     robotframework-sshlibrary \
     robotframework-scplibrary \
     pysnmp \
-    robotframework-xvfb \
-    xvfbwrapper==0.2.8
+    robotframework-xvfb --upgrade --force-reinstall \
+    xvfbwrapper==0.2.8 --upgrade --force-reinstall
     
 RUN pip list
 
