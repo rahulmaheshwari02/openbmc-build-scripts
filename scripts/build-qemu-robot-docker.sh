@@ -68,7 +68,7 @@ RUN pip install \
     robotframework-scplibrary \
     pysnmp \
     #robotframework-xvfb \
-    #xvfbwrapper==0.2.8
+    xvfbwrapper==0.2.8
     
 RUN pip list
 
