@@ -66,10 +66,10 @@ RUN pip install \
     robotframework-requests \
     robotframework-sshlibrary \
     robotframework-scplibrary \
-    pysnmp \
-    #robotframework-xvfb \
-    xvfbwrapper==0.2.8
-    
+    robotframework-xvfb \
+    #xvfbwrapper==0.2.8 \
+    pysnmp
+
 RUN pip list
 
 RUN wget https://sourceforge.net/projects/ipmitool/files/ipmitool/1.8.18/ipmitool-1.8.18.tar.bz2
