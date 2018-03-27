@@ -53,6 +53,7 @@ RUN apt-get update && apt-get install -yy \
     curl \
     build-essential \
     libpixman-1-0 \
+    xvfb python-pip \
     libglib2.0-0
 
 RUN easy_install \
@@ -68,7 +69,7 @@ RUN pip install \
     robotframework-scplibrary \
     robotframework-xvfb \
     #xvfbwrapper==0.2.8 \
-    robotframework-selenium2library \
+    #robotframework-selenium2library \
     pysnmp
 
 RUN pip list
