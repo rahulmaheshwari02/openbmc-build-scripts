@@ -70,6 +70,9 @@ RUN pip install \
     robotframework-xvfb \
     #xvfbwrapper==0.2.8 \
     robotframework-selenium2library \
+    robotframework-seleniumlibrary \
+    robotframework-extendedselenium2library \
+    robotframework-angularjs \
     pysnmp
 
 RUN pip list
