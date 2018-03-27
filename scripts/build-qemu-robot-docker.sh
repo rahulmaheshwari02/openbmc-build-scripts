@@ -66,8 +66,9 @@ RUN pip install \
     robotframework-requests \
     robotframework-sshlibrary \
     robotframework-scplibrary \
+    pysnmp \
     robotframework-xvfb \
-    pysnmp
+    xvfbwrapper
     
 RUN pip list
 
