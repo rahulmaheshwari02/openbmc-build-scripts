@@ -83,7 +83,7 @@ RUN make
 RUN make install
 
 RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.20.0/geckodriver-v0.20.0-linux64.tar.gz
-#RUN tar -xvf geckodriver-*.tar.gz
+RUN tar -xvf geckodriver-*.tar.gz
 #RUN cp geckodriver /usr/local/bin
 
 RUN grep -q ${GROUPS} /etc/group || groupadd -g ${GROUPS} ${USER}
