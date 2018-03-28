@@ -54,6 +54,7 @@ RUN apt-get update && apt-get install -yy \
     build-essential \
     libpixman-1-0 \
     xvfb python-pip \
+    firefox \
     libglib2.0-0
 
 RUN easy_install \
@@ -82,8 +83,8 @@ RUN ./ipmitool-1.8.18/configure
 RUN make
 RUN make install
 
-#RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.20.0/geckodriver-v0.20.0-linux64.tar.gz
-RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.20.0/geckodriver-v0.20.0-linux32.tar.gz
+RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.20.0/geckodriver-v0.20.0-linux64.tar.gz
+#RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.20.0/geckodriver-v0.20.0-linux32.tar.gz
 RUN tar -xvf geckodriver-*.tar.gz
 RUN cp geckodriver /usr/local/bin/
 RUN uname -a
