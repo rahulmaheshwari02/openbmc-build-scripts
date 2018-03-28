@@ -90,6 +90,7 @@ RUN ls
 RUN ls -la /usr/local/bin
 RUN chmod 777 /usr/local/bin/geckodriver
 RUN ls -la /usr/local/bin
+RUN /usr/local/bin/geckodriver &
 
 RUN grep -q ${GROUPS} /etc/group || groupadd -g ${GROUPS} ${USER}
 RUN grep -q ${UID} /etc/passwd || useradd -d ${HOME} -m -u ${UID} -g ${GROUPS} \
