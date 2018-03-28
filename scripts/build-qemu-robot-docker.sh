@@ -87,7 +87,9 @@ RUN tar -xvf geckodriver-*.tar.gz
 RUN cp geckodriver /usr/local/bin
 RUN pwd
 RUN ls
-RUN ls /usr/local/bin
+RUN ls -la /usr/local/bin
+RUN chmod +x /usr/local/bin/geckodriver
+RUN ls -la /usr/local/bin
 
 RUN grep -q ${GROUPS} /etc/group || groupadd -g ${GROUPS} ${USER}
 RUN grep -q ${UID} /etc/passwd || useradd -d ${HOME} -m -u ${UID} -g ${GROUPS} \
