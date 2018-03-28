@@ -87,6 +87,7 @@ RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.20.0/geckod
 RUN tar -xvf geckodriver-*.tar.gz
 RUN cp geckodriver /usr/local/bin
 RUN uname -a
+RUN cat /etc/os-release
 
 #RUN pwd
 #RUN ls
