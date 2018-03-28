@@ -73,6 +73,7 @@ RUN pip install \
     robotframework-seleniumlibrary \
     robotframework-extendedselenium2library \
     robotframework-angularjs \
+    robotremoteserver \
     pysnmp
 
 RUN pip list
