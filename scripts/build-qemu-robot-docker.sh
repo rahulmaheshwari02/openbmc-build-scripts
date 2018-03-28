@@ -88,7 +88,7 @@ RUN cp geckodriver /usr/local/bin
 RUN pwd
 RUN ls
 RUN ls -la /usr/local/bin
-RUN chmod +x /usr/local/bin/geckodriver
+RUN chmod 777 /usr/local/bin/geckodriver
 RUN ls -la /usr/local/bin
 
 RUN grep -q ${GROUPS} /etc/group || groupadd -g ${GROUPS} ${USER}
