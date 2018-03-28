@@ -82,11 +82,13 @@ RUN ./ipmitool-1.8.18/configure
 RUN make
 RUN make install
 
-RUN pwd
-RUN ls
 RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.20.0/geckodriver-v0.20.0-linux64.tar.gz
 RUN tar -xvf geckodriver-*.tar.gz
 RUN cp geckodriver /usr/local/bin
+RUN pwd
+RUN ls
+RUN cd /usr/local/bin
+RUN ls
 
 RUN grep -q ${GROUPS} /etc/group || groupadd -g ${GROUPS} ${USER}
 RUN grep -q ${UID} /etc/passwd || useradd -d ${HOME} -m -u ${UID} -g ${GROUPS} \
