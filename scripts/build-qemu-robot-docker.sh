@@ -96,8 +96,8 @@ RUN cat /etc/os-release
 #RUN pwd
 #RUN ls
 RUN ls -la /usr/local/bin
-#RUN chmod 777 /usr/local/bin/geckodriver
-#RUN ls -la /usr/local/bin
+RUN chmod 777 /usr/local/bin/geckodriver
+RUN ls -la /usr/local/bin
 #RUN export PATH=$PATH:/geckodriver
 
 RUN grep -q ${GROUPS} /etc/group || groupadd -g ${GROUPS} ${USER}
