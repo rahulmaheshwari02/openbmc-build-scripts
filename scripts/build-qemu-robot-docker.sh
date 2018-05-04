@@ -86,6 +86,8 @@ RUN make install
 
 RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.20.0/geckodriver-v0.20.0-linux64.tar.gz
 #RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.20.0/geckodriver-v0.20.0-linux32.tar.gz
+RUN pwd
+RUN ls
 RUN tar -xvf geckodriver-*.tar.gz
 RUN cp geckodriver /usr/local/bin/
 RUN uname -a
@@ -93,7 +95,7 @@ RUN cat /etc/os-release
 
 #RUN pwd
 #RUN ls
-#RUN ls -la /usr/local/bin
+RUN ls -la /usr/local/bin
 #RUN chmod 777 /usr/local/bin/geckodriver
 #RUN ls -la /usr/local/bin
 #RUN export PATH=$PATH:/geckodriver
